@@ -1,0 +1,56 @@
+
+.contenedor-descripcion {
+    background-color: #F7BFBE;
+    border: 5px solid #F76A6A;
+    border-radius: 10px;
+}
+
+.foto {
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Espacio entre elementos */
+}
+
+.heading:not(:last-child) {
+    padding-right: 20px;
+    /* Espacio antes de la línea */
+    border-right: 2px solid #F76A6A;
+    /* Línea vertical */
+}
+
+.titulo-1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.titulo-2 {
+    font-family: "Kite One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.descripcion {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    top: -450px;
+    right: -1200px;
+}
