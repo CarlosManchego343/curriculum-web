@@ -1,13 +1,13 @@
-
 .contenedor-descripcion {
-    background-color: #F7BFBE;
-    border: 5px solid #F76A6A;
+    background-color: #000000;
+    border: 5px solid #515151;
     border-radius: 10px;
 }
 
 .foto {
     border-radius: 50%;
-    box-shadow: 2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);
+    width: 250px;
+    height: 200px;
 }
 
 .heading-container {
@@ -21,7 +21,7 @@
 .heading:not(:last-child) {
     padding-right: 20px;
     /* Espacio antes de la línea */
-    border-right: 2px solid #F76A6A;
+    border-right: 2px solid #B21C15;
     /* Línea vertical */
 }
 
@@ -32,12 +32,14 @@
     font-style: normal;
     font-size: 60px;
     text-align: center;
+    color: #E8E3E3;
 }
 
 .titulo-2 {
     font-family: "Kite One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #FC4B08;
 }
 
 .descripcion {
@@ -47,10 +49,46 @@
     font-style: normal;
     font-size: 20px;
     text-align: center;
+    color: #FDF9F9;
 }
 
-img {
-    position: relative;
-    top: -450px;
-    right: -1200px;
+b {
+    color: #B21C15;
+}
+
+.foto-card {
+    background-color: #000000;
+    border: 5px solid #515151;
+    border-radius: 10px;
+}
+
+.nombre {
+    font-family: "Kite One", sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: #DE8B8B;
+}
+
+.botones {
+    background-color: #4A0707;
+    color: #E8E3E3;
+}
+
+.correo {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #FDF9F9;
+}
+
+.boton-dcv {
+    background-color: #4A0707;
+    color: #E8E3E3;
+}
+
+.underline {
+    text-decoration: none;
 }
