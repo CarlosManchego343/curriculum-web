@@ -1,0 +1,9 @@
+.item-caruosel {
+    width: 35%;
+}
+
+.contenedor-descripcion {
+    background-color: #000000;
+    border: 5px solid #515151;
+    border-radius: 10px;
+}
