@@ -20,10 +20,11 @@ export class ProyectosComponent {
         "assets/proyectoPQRSA/registro.png", 
         "assets/proyectoPQRSA/reportes.png"
       ],
+      descripcion : "Aplicación diseñada para la toma de las distintas peticiones, quejas, reclamos, sugerencias y agradecimientos de una compañia.",
       lenguajes: [
         "assets/Iconos/dart.png", 
         "assets/Iconos/flutter.png"
-      ]
+      ],
     }
   ]
 

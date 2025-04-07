@@ -15,7 +15,15 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="w-50 contenedor-descripcion">
-      
+    <div class="w-50 p-5 contenedor-descripcion">
+      <h2 class="titulo-2">{{ proyecto.nombre }}</h2>
+      <p class="descripcion">{{ proyecto.descripcion }}</p>
+      <hr class="my-4 separacion">
+      <div class="heading-container mt-3">
+        <h2 class="heading titulo-2">Lenguajes usados</h2>
+        <div *ngFor="let proyectoLenguajes of proyecto.lenguajes; let i = index">
+          <img [src]="proyectoLenguajes" width="100px" height="75px" [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
+        </div>
+    </div>
     </div>
   </div>
