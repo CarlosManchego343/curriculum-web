@@ -2,35 +2,13 @@
     <h1 class="titulo-1 m-5">Experiencia laboral</h1>
     <section class="m-5">
         <ol class="experienceList">
-            <li class="experienceItemList">
+            <li class="experienceItemList" *ngFor="let experiencia of experiencias">
                 <div class="decorativeCircleList"></div>
-                <p class="datos">Julio 2023 - Agosto 2023</p>
-                <h2 class="titulo-2">Ingeniero de sistemas Junior</h2>
-                <h3 class="lugar">Clinica universidad de la sabana</h3>
-                <p class="mt-3 datos w-75">
-                    Participé en el desarrollo de proyectos Backend mediante Java y Spring bajo el patrón
-                    modelo-vista-controlador (MVC).
-                </p>
-                <p class="datos w-75">
-                    Optimice las interfaces de los proyectos haciendo uso de HTML, CSS, JavaScript y Bootstrap,
-                    mejorando así la experiencia del usuario un 20%.
-                </p>
-            </li>
-            <li class="experienceItemList">
-                <div class="decorativeCircleList"></div>
-                <p class="datos">Julio 2022 - Enero 2023</p>
-                <h2 class="titulo-2">Practicante de desarrollador Front end</h2>
-                <h3 class="lugar">NTTDATA</h3>
-                <p class="mt-3 datos w-75">
-                    Participé en el desarrollo de un proyecto de migración de una aplicación web hecha en Angular a
-                    React bajo la arquitectura de micro Frontends mejorando la escalabilidad del proyecto.
-                </p>
-                <p class="datos w-75">
-                    Contribuí en la verificación de que los proyectos estén apuntando de manera correcta el backend
-                    desarrollado, asegurando la integridad de los datos.
-                </p>
-                <p class="datos w-75">
-                    Colaboré en la documentación y capacitación sobre protocolos HTTP, frameworks y arquitecturas.
+                <p class="datos">{{ experiencia.tiempo }}</p>
+                <h2 class="titulo-2">{{ experiencia.cargo }}</h2>
+                <h3 class="lugar">{{ experiencia.lugar }}</h3>
+                <p class="mt-3 datos w-75" *ngFor="let descripcion of experiencia.descripciones">
+                    {{ descripcion }}
                 </p>
             </li>
         </ol>
