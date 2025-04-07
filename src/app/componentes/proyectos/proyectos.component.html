@@ -1,7 +1,7 @@
-<div class="p-5 d-flex justify-content-evenly">
+<div class="p-5 d-flex justify-content-evenly" *ngFor="let proyecto of proyectosRealizados">
     <div id="carouselExample" class="carousel slide item-caruosel">
       <div class="carousel-inner">
-        <div *ngFor="let proyectoImagen of proyectosRealizados[0].imagenes; let i = index" 
+        <div *ngFor="let proyectoImagen of proyecto.imagenes; let i = index" 
              class="carousel-item" [class.active]="i === 0">
           <img [src]="proyectoImagen" class="d-block w-100" height="400px" [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
         </div>

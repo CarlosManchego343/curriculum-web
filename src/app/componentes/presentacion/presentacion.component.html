@@ -23,30 +23,27 @@
         <div class="card-body">
             <h5 class="card-title nombre">Carlos Mario Manchego Pabón</h5>
             <div class="d-flex justify-content-evenly">
-                <a href="https://github.com/CarlosManchego343">
-                    <button type="button" class="btn botones">
-                        <i class="bi bi-github"></i>
-                    </button>
-                </a>
-                <a href="https://www.linkedin.com/in/carlosmariomanchegopabon/">
-                    <button type="button" class="btn botones">
-                        <i class="bi bi-linkedin"></i>
-                    </button>
-                </a>
-                <a href="https://wa.me/573134895896">
-                    <button type="button" class="btn botones">
-                        <i class="bi bi-whatsapp"></i>
-                    </button>
-                </a>
+                <button type="button" class="btn botones"
+                    (click)="openExternalUrl('https://github.com/CarlosManchego343')">
+                    <i class="bi bi-github"></i>
+                </button>
+                <button type="button" class="btn botones"
+                    (click)="openExternalUrl('https://www.linkedin.com/in/carlosmariomanchegopabon/')">
+                    <i class="bi bi-linkedin"></i>
+                </button>
+                <button type="button" class="btn botones" (click)="openExternalUrl('https://wa.me/573134895896')">
+                    <i class="bi bi-whatsapp"></i>
+                </button>
             </div>
             <p class="correo mt-2">
                 carlosmariomanchego1&#64;gmail.com
             </p>
-            <a href="https://drive.google.com/file/d/1V3O16VUfr-WyisdfCWVWgxcQJka26OsN/view?usp=sharing" class="d-flex justify-content-center underline">
-                <button type="button" class="btn boton-dcv">
+            <div
+                class="d-flex justify-content-center">
+                <button type="button" class="btn boton-dcv" (click)="openExternalUrl('https://drive.google.com/file/d/1V3O16VUfr-WyisdfCWVWgxcQJka26OsN/view?usp=sharing')">
                     Descargar CV
                 </button>
-            </a>
+            </div>
         </div>
     </div>
 </div>

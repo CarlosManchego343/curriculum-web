@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class PresentacionComponent {
 
+  openExternalUrl(url: string): void {
+    window.open(url, '_blank');
+  }
+  
 }
