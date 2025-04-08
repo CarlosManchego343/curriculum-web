@@ -5,7 +5,7 @@
     font-style: normal;
     font-size: 60px;
     color: #E8E3E3;
-    margin-left: 5%;
+    margin-left: 12%;
 }
 
 .item-caruosel {
@@ -41,9 +41,11 @@
 
 .heading-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    overflow-x: auto;
+    /* Scroll horizontal */
+    white-space: nowrap;
+    padding: 10px 0;
+    gap: 15px;
     /* Espacio entre elementos */
 }
 
@@ -54,3 +56,6 @@
     /* Línea vertical */
 }
 
+.heading-container img {
+    flex: 0 0 auto; /* Evita que se estiren */
+  }

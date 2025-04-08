@@ -45,6 +45,7 @@ export class ProyectosComponent {
         "assets/Iconos/CSS.png",
         "assets/Iconos/Javascript.png",
         "assets/Iconos/Angular.png",
+        "assets/Iconos/Bootstrap.png",
         "assets/Iconos/Java.png",
         "assets/Iconos/SpringBoot.png"
       ]
