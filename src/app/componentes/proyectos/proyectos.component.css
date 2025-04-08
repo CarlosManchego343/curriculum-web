@@ -1,3 +1,13 @@
+.titulo-1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+    color: #E8E3E3;
+    margin-left: 5%;
+}
+
 .item-caruosel {
     width: 35%;
 }

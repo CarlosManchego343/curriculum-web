@@ -10,6 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class ProyectosComponent {
 
+  getCarouselId(index: number): string {
+    return `carouselExample-${index}`;
+  }
+
   proyectosRealizados = [
     {
       nombre: "Gestor de PQRSA",
@@ -25,6 +29,25 @@ export class ProyectosComponent {
         "assets/Iconos/dart.png", 
         "assets/Iconos/flutter.png"
       ],
+    },
+    {
+      nombre: "Gestor de Inventario",
+      imagenes: [
+        "assets/proyectoGestorDeInventario/tablaProductos.png",
+        "assets/proyectoGestorDeInventario/panelAgregar.png",
+        "assets/proyectoGestorDeInventario/controlador.png",
+        "assets/proyectoGestorDeInventario/modelo.png",
+        "assets/proyectoGestorDeInventario/repositorio.png",
+      ],
+      descripcion: "Aplicación diseñada para la gestion de productos de una tienda.",
+      lenguajes: [
+        "assets/Iconos/HTML.png",
+        "assets/Iconos/CSS.png",
+        "assets/Iconos/Javascript.png",
+        "assets/Iconos/Angular.png",
+        "assets/Iconos/Java.png",
+        "assets/Iconos/SpringBoot.png"
+      ]
     }
   ]
 
