@@ -1,5 +1,5 @@
 .contenedor-principal {
-    margin-left: 11%;
+    margin-left: 1%;
 }
 
 .titulo-1 {
@@ -7,7 +7,7 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 60px;
+    font-size: 2rem;
     color: #E8E3E3;
 }
 
@@ -37,7 +37,7 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
     color: #FDF9F9;
 }
 
@@ -46,6 +46,7 @@
     font-weight: 400;
     font-style: normal;
     color: #882222;
+    font-size: 20px;
 }
 
 .titulo-2 {
@@ -53,4 +54,28 @@
     font-weight: 400;
     font-style: normal;
     color: #DE8B8B;
+    font-size: 30px;
+}
+
+@media (min-width: 992px) {
+    .contenedor-principal {
+        margin-left: 11%;
+    }
+
+    .titulo-1 {
+        font-size: 3rem;
+    }
+
+    .titulo-2 {
+        font-size: 3rem;
+    }
+
+    .datos {
+        font-size: 20px;
+        width: 75%;
+    }
+
+    .lugar {
+        font-size: 2rem;
+    }
 }

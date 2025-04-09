@@ -1,7 +1,12 @@
+.contenedor-padre {
+    display: block
+}
+
 .contenedor-descripcion {
     background-color: #000000;
     border: 5px solid #515151;
     border-radius: 10px;
+    width: 18rem;
 }
 
 .foto {
@@ -30,7 +35,7 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 60px;
+    font-size: 2rem;
     text-align: center;
     color: #E8E3E3;
 }
@@ -40,6 +45,7 @@
     font-weight: 400;
     font-style: normal;
     color: #DE8B8B;
+    font-size: 80%;
 }
 
 .descripcion {
@@ -47,7 +53,7 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     color: #FDF9F9;
 }
@@ -60,6 +66,7 @@ b {
     background-color: #000000;
     border: 5px solid #515151;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .nombre {
@@ -89,3 +96,31 @@ b {
     color: #E8E3E3;
 }
 
+
+@media (min-width: 992px) {
+    .contenedor-padre {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contenedor-descripcion {
+        width: 50%;
+    }
+
+    .foto-card {
+        width: 50%;
+    }
+
+    .titulo-1 {
+        font-size: 3rem;
+    }
+
+    .titulo-2 {
+        font-size: 160%;
+    }
+
+    .descripcion {
+        font-size: 20px;
+    }
+
+}

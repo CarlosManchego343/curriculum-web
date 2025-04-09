@@ -1,32 +1,40 @@
 <h1 class="titulo-1">Proyectos realizados</h1>
-<div class="p-5 d-flex justify-content-evenly" *ngFor="let proyecto of proyectosRealizados; let projectIndex = index">
-  <div [id]="getCarouselId(projectIndex)" class="carousel slide item-caruosel">
-    <div class="carousel-inner">
-      <div *ngFor="let proyectoImagen of proyecto.imagenes; let i = index" class="carousel-item"
-        [class.active]="i === 0">
-        <img [src]="proyectoImagen" class="d-block w-100" height="400px" [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
+<div *ngFor="let proyecto of proyectosRealizados; let projectIndex = index">
+  <div class="p-5 contenedor-padre">
+    <div [id]="getCarouselId(projectIndex)" class="carousel slide item-caruosel">
+      <div class="carousel-inner">
+        <div *ngFor="let proyectoImagen of proyecto.imagenes; let i = index" class="carousel-item"
+          [class.active]="i === 0">
+          <img [src]="proyectoImagen" class="d-block w-100 imagen-carusel"
+            [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#' + getCarouselId(projectIndex)"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#' + getCarouselId(projectIndex)"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="p-5 contenedor-descripcion">
+      <h2 class="titulo-2">{{ proyecto.nombre }}</h2>
+      <p class="descripcion">{{ proyecto.descripcion }}</p>
+      <hr class="my-4 separacion">
+      <div class="heading-container mt-3">
+        <h2 class="heading titulo-2">Lenguajes usados</h2>
+        <div *ngFor="let proyectoLenguajes of proyecto.lenguajes; let i = index">
+          <img [src]="proyectoLenguajes" [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#' + getCarouselId(projectIndex)"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#' + getCarouselId(projectIndex)"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-  <div class="p-5 contenedor-descripcion">
-    <h2 class="titulo-2">{{ proyecto.nombre }}</h2>
-    <p class="descripcion">{{ proyecto.descripcion }}</p>
-    <hr class="my-4 separacion">
-    <div class="heading-container mt-3">
-      <h2 class="heading titulo-2">Lenguajes usados</h2>
-      <div *ngFor="let proyectoLenguajes of proyecto.lenguajes; let i = index">
-        <img [src]="proyectoLenguajes" width="100px" height="75px" [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
-      </div>
+  <div class="container-fluid px-0">
+    <div class="d-flex justify-content-center">
+      <hr class="my-4 separacion-contenidos">
     </div>
   </div>
 </div>
