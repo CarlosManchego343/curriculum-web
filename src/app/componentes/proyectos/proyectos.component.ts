@@ -49,6 +49,22 @@ export class ProyectosComponent {
         "assets/Iconos/Java.png",
         "assets/Iconos/SpringBoot.png"
       ]
+    },
+    {
+      nombre: "Conecta 4",
+      imagenes: [
+        "assets/proyectoConecta4/tableroVacio.png",
+        "assets/proyectoConecta4/tableroUsado.png",
+        "assets/proyectoConecta4/ganador.png",
+        "assets/proyectoConecta4/confetti.png",
+      ],
+      descripcion: "Aplicación que simula un juego de conecta 4",
+      lenguajes: [
+        "assets/Iconos/HTML.png",
+        "assets/Iconos/CSS.png",
+        "assets/Iconos/Javascript.png",
+        "assets/Iconos/React.png",
+      ]
     }
   ]
 
