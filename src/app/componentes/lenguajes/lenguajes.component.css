@@ -1,0 +1,27 @@
+.titulo-1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    color: #E8E3E3;
+    margin-left: 12%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo-1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    .titulo-1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .titulo-1 {
+        font-size: 3rem;
+    }
+}
