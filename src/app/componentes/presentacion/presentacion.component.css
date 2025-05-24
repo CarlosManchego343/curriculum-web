@@ -282,21 +282,23 @@ span {
         position: fixed;
         right: 0;
         margin-right: 5%;
-        top: 30%;
+        top: 15%;
         transform: translateY(-50%);
         padding: 1rem;
         z-index: 100;
         width: 30%;
+        animation: float 3s ease-in-out infinite;
     }
 
     .contenedor-lenguajes {
         position: fixed;
         right: 0;
         margin-right: 5%;
-        top: 70%;
+        top: 50%;
         transform: translateY(-50%);
         padding: 1rem;
         z-index: 100;
         width: 30%;
+        animation: float 3s ease-in-out infinite;
     }
 }
