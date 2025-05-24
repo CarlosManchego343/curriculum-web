@@ -2,8 +2,7 @@
 body {
     margin: 0;
     min-height: 100vh; /* Cubre toda la altura de la pantalla */
-    background-image: url("/assets/Iconos/fondo.webp");
-    background-attachment: fixed; /* Fija el degradado al hacer scroll */
+    background-image: url('https://www.transparenttextures.com/patterns/rice-paper.png');
   }
 
 @font-face {
@@ -15,3 +14,12 @@ body {
   font-family: 'titulos';
   src: url('/assets/fonts/KARAN___.ttf') format('truetype');
 }
+
+router-outlet ~ * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+

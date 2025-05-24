@@ -6,17 +6,17 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 export const routes: Routes = [
     {
         path: '',
-        title: 'Presentacion',
+        data: { animation: 'presentacion' },
         component: PresentacionComponent
     },
     {
         path: 'experiencia',
-        title: 'Experiencia',
+        data: { animation: 'experiencia' },
         component: TimelineExpLabComponent
     },
     {
         path: 'proyectos',
-        title: 'Proyectos',
+        data: { animation: 'proyectos' },
         component: ProyectosComponent
     },
     {
