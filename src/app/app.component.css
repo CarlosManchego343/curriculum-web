@@ -1,14 +1,7 @@
-.page-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    perspective: 1200px;
-    top: -60px;
-}
-
-.page-container > div {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
+.manga-book {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  perspective: 1500px;
+  overflow: hidden;
 }

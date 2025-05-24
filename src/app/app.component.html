@@ -1,6 +1,6 @@
-<div class="page-container">
-    <app-navbar></app-navbar>
-    <div [@routeAnimations]="prepareRoute(outlet)">
-        <router-outlet #outlet="outlet"></router-outlet>
-    </div>
+<div class="manga-book">
+  <app-navbar></app-navbar>
+  <div class="page-container" [@pageFlip]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
 </div>

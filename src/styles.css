@@ -16,10 +16,16 @@ body {
 }
 
 router-outlet ~ * {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   transform-style: preserve-3d;
-  backface-visibility: hidden;
+  overflow-y: auto; /* Scroll interno */
 }
 
+:host {
+  display: block;
+  height: 100%;
+}

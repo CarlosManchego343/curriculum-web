@@ -26,9 +26,9 @@ export class AppComponent implements OnInit {
     return outlet?.activatedRouteData?.['animation'];
   }
 
-  @HostListener('@routeAnimations.start')
+  @HostListener('@pageFlip.start')
   onAnimationStart() {
-    const sound = new Audio('assets/sounds/page-flip.mp3');
+    const sound = new Audio('/assets/sounds/pageflip.mp3');
     sound.volume = 0.3;
     sound.play();
   }
