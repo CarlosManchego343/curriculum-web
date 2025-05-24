@@ -26,8 +26,8 @@ export class ProyectosComponent {
       ],
       descripcion : "Aplicación diseñada para la toma de las distintas peticiones, quejas, reclamos, sugerencias y agradecimientos de una compañia.",
       lenguajes: [
-        "assets/Iconos/dart.png", 
-        "assets/Iconos/flutter.png"
+        "Dart", 
+        "Flutter"
       ],
     },
     {
@@ -41,13 +41,13 @@ export class ProyectosComponent {
       ],
       descripcion: "Aplicación diseñada para la gestion de productos de una tienda.",
       lenguajes: [
-        "assets/Iconos/HTML.png",
-        "assets/Iconos/CSS.png",
-        "assets/Iconos/Javascript.png",
-        "assets/Iconos/Angular.png",
-        "assets/Iconos/Bootstrap.png",
-        "assets/Iconos/Java.png",
-        "assets/Iconos/SpringBoot.png"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "Bootstrap",
+        "Java",
+        "Spring Boot"
       ]
     },
     {
@@ -60,10 +60,10 @@ export class ProyectosComponent {
       ],
       descripcion: "Aplicación que simula un juego de conecta 4",
       lenguajes: [
-        "assets/Iconos/HTML.png",
-        "assets/Iconos/CSS.png",
-        "assets/Iconos/Javascript.png",
-        "assets/Iconos/React.png",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
       ]
     }
   ]

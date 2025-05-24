@@ -2,6 +2,16 @@
 body {
     margin: 0;
     min-height: 100vh; /* Cubre toda la altura de la pantalla */
-    background: linear-gradient(135deg, #000000, #6a0dad);
+    background-image: url("/assets/Iconos/fondo.webp");
     background-attachment: fixed; /* Fija el degradado al hacer scroll */
   }
+
+@font-face {
+  font-family: 'parrafos';
+  src: url('/assets/fonts/animeace2_ital.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'titulos';
+  src: url('/assets/fonts/KARAN___.ttf') format('truetype');
+}

@@ -5,13 +5,11 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { Title } from '@angular/platform-browser';
 import { TimelineExpLabComponent } from './componentes/timeline-exp-lab/timeline-exp-lab.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-import { LenguajesComponent } from './componentes/lenguajes/lenguajes.component';
-
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PresentacionComponent, NavbarComponent, TimelineExpLabComponent, ProyectosComponent, LenguajesComponent],
+  imports: [RouterOutlet, PresentacionComponent, NavbarComponent, TimelineExpLabComponent, ProyectosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

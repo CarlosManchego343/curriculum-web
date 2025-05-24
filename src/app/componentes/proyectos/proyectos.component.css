@@ -72,10 +72,70 @@
     border-right: 2px solid #B21C15;
 }
 
-.heading-container img {
-    flex: 0 0 auto;
-    width: 45px;
-    height: 45px;
+.language-item {
+    flex: 0 1 auto;
+    max-height: 40px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: black;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: bold;
+}
+
+.java {
+    background: linear-gradient(to right,
+            #FF0000,
+            #1253D5);
+}
+
+.php {
+    background-color: #737BB2;
+}
+
+.python {
+    background: linear-gradient(to right,
+            #346C9C,
+            #FCEA74);
+}
+
+.html {
+    background-color: #E44C23;
+}
+
+.css {
+    background-color: #1664AC;
+}
+
+.javascript {
+    background-color: #F3DB1C;
+}
+
+.dart {
+    background: linear-gradient(to right,
+            #04C4B4,
+            #0474CC);
+}
+
+.spring {
+    background-color: #5FB438;
+}
+
+.react {
+    background-color: #189CCC;
+}
+
+.bootstrap {
+    background-color: #5C4484;
+}
+
+.angular {
+    background-color: #DC0434;
+}
+
+.flutter {
+    background: linear-gradient(to right,
+            #04ACF4,
+            #05529A);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

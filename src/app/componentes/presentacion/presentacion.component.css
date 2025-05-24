@@ -1,18 +1,13 @@
-.contenedor-padre {
-    display: block
-}
-
 .contenedor-descripcion {
-    background-color: #000000;
-    border: 5px solid #515151;
-    border-radius: 10px;
-    width: 18rem;
+    background-color: white;
+    border: 2px solid black;
+    width: 1rem;
 }
 
-.foto {
-    border-radius: 50%;
-    width: 250px;
-    height: 200px;
+.contenedor-lenguajes {
+    background-color: white;
+    border: 2px solid black;
+    width: 1rem;
 }
 
 .heading-container {
@@ -25,284 +20,283 @@
 
 .heading:not(:last-child) {
     padding-right: 20px;
-    /* Espacio antes de la línea */
-    border-right: 2px solid #B21C15;
-    /* Línea vertical */
+    border-right: 2px solid grey;
 }
 
 .titulo-1 {
-    font-family: "Orbitron", sans-serif;
+    font-family: "titulos", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
-    color: #E8E3E3;
+    color: black;
 }
 
 .titulo-2 {
-    font-family: "Kite One", sans-serif;
+    font-family: "parrafos", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #DE8B8B;
+    color: black;
     font-size: 80%;
 }
 
-.descripcion {
-    font-family: "Ysabeau Infant", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 15px;
-    text-align: center;
-    color: #FDF9F9;
-}
-
-b {
-    color: #B21C15;
-}
-
-.foto-card {
-    background-color: #000000;
-    border: 5px solid #515151;
-    border-radius: 10px;
-    margin-top: 20px;
-    width: 18rem;
-}
-
-.nombre {
-    font-family: "Kite One", sans-serif;
-    font-style: normal;
-    text-align: center;
-    color: #DE8B8B;
-}
-
 .botones {
-    background-color: #4A0707;
+    background-color: black;
     color: #E8E3E3;
 }
 
 .correo {
-    font-family: "Ysabeau Infant", sans-serif;
+    text-align: center;
+}
+
+.correo a {
+    font-family: "parrafos", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
     font-size: 15px;
-    text-align: center;
-    color: #FDF9F9;
+    color: black;
+    text-decoration: none;
 }
 
 .boton-dcv {
-    background-color: #4A0707;
-    color: #E8E3E3;
+    font-family: "parrafos", sans-serif;
+    border: 1px solid black;
+    color: black;
 }
 
-@media (min-width: 344px) and (max-width: 539px) {
-    .contenedor-padre {
-        display: block;
-    }
-
-    .contenedor-descripcion {
-        width: 100%;
-    }
-
-    .foto-card {
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-
-    .foto {
-        width: 88%;
-    }
-
-    .nombre {
-        font-size: 18px;
-    }
-    
-    .correo {
-        font-size: 14px;
-    }
-    
-    .titulo-1 {
-        font-size: 2rem;
-    }
-
-    .titulo-2 {
-        font-size: 100%;
-        text-align: center;
-    }
-
-    .descripcion {
-        font-size: 15px;
-    }
-
+p,
+strong,
+span {
+    font-family: "parrafos", sans-serif;
 }
 
-@media (min-width: 540px) and (max-width: 767px) {
-    .contenedor-padre {
-        display: block;
-    }
-
-    .contenedor-descripcion {
-        width: 100%;
-    }
-
-    .foto-card {
-        width: 100%;
-        height: 26rem;
-    }
-
-    .foto {
-        object-fit: cover; 
-        align-self: center; 
-    }
-    
-    .correo {
-        font-size: 20px;
-    }
-    
-    .titulo-1 {
-        font-size: 2rem;
-    }
-
-    .titulo-2 {
-        font-size: 100%;
-    }
-
-    .descripcion {
-        font-size: 15px;
-    }
-
+/* Estilos para el personaje */
+.character-container {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1000;
 }
 
-@media (min-width: 768px) and (max-width: 994px) {
-    .contenedor-padre {
-        display: block;
-    }
-
-    .contenedor-descripcion {
-        width: 100%;
-    }
-
-    .foto-card {
-        width: 100%;
-        height: 14rem;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .foto {
-        width: 180px;     
-        height: 180px;
-        object-fit: cover; 
-        align-self: center; 
-    }
-    
-    .card-body {
-       padding: 2rem !important;
-    }
-    
-    .correo {
-        font-size: 20px;
-    }
-    
-    .titulo-1 {
-        font-size: 3rem;
-    }
-
-    .titulo-2 {
-        font-size: 150%;
-    }
-
-    .descripcion {
-        font-size: 20px;
-    }
-
+.character {
+    width: 500px;
+    height: 700px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s;
 }
 
-@media (min-width: 995px) and (max-width: 1224px) {
-    .contenedor-padre {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .contenedor-descripcion {
-        width: 50%;
-    }
-
-    .foto-card {
-        width: 18rem;
-        height: 28rem;
-    }
-
-    .titulo-1 {
-        font-size: 2rem;
-    }
-
-    .titulo-2 {
-        font-size: 100%;
-    }
-
-    .descripcion {
-        font-size: 15px;
-    }
-
+.bubbles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-bottom: 50px;
 }
 
-@media (min-width: 1225px) and (max-width: 1299px) {
-    .contenedor-padre {
-        display: flex;
-        justify-content: space-evenly;
+/* --- GLOBO SUPERIOR --- */
+.top-bubble {
+    position: absolute;
+    left: 50px;
+    /* Ajusta según el ancho del personaje */
+    top: -160px;
+    /* Posición sobre la cabeza */
+    width: 800px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    /* Borde negro */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+    text-align: center;
+}
+
+.top-bubble::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    /* Ajusta para centrar sobre el personaje */
+    top: 100%;
+    /* Parte inferior del globo */
+    border-width: 15px 10px 0 10px;
+    /* Triángulo apuntando hacia abajo */
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    /* Blanco */
+    z-index: 2;
+    /* Encima del borde negro */
+}
+
+.top-bubble::after {
+    content: '';
+    position: absolute;
+    left: 29px;
+    /* 1px menos para el desplazamiento del borde */
+    top: 100%;
+    border-width: 16px 11px 0 11px;
+    /* Un poco más grande que el blanco */
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    /* Negro */
+    z-index: 1;
+    /* Detrás del triángulo blanco */
+}
+
+/* --- GLOBOS LATERALES (estilos existentes) --- */
+.speech-bubble:not(.top-bubble) {
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    left: 50px;
+    border: 2px solid #000;
+    width: 580px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+    text-align: center;
+}
+
+/* Triángulo lateral (apunta al personaje) */
+.speech-bubble:not(.top-bubble)::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    bottom: 20px;
+    border-width: 10px 16px 10px 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    z-index: 1;
+}
+
+.speech-bubble:not(.top-bubble)::after {
+    content: '';
+    position: absolute;
+    left: -18px;
+    bottom: 20px;
+    border-width: 10px 16px 10px 0;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+}
+
+/* Animación (opcional) */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
 
-    .contenedor-descripcion {
-        width: 50%;
+    50% {
+        transform: translateY(-5px);
     }
+}
 
-    .foto-card {
-        width: 18rem;
-        height: 26rem;
-    }
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    .titulo-1 {
-        font-size: 3rem;
-    }
+.language-item {
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: black;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: bold;
+}
 
-    .titulo-2 {
-        font-size: 140%;
-    }
+.java {
+    background: linear-gradient(to right,
+            #FF0000,
+            #1253D5);
+}
 
-    .descripcion {
-        font-size: 15px;
-    }
+.php {
+    background-color: #737BB2;
+}
 
+.python {
+    background: linear-gradient(to right,
+            #346C9C,
+            #FCEA74);
+}
+
+.html {
+    background-color: #E44C23;
+}
+
+.css {
+    background-color: #1664AC;
+}
+
+.javascript {
+    background-color: #F3DB1C;
+}
+
+.dart {
+    background: linear-gradient(to right,
+            #04C4B4,
+            #0474CC);
+}
+
+.spring {
+    background-color: #5FB438;
+}
+
+.react {
+    background-color: #189CCC;
+}
+
+.bootstrap {
+    background-color: #5C4484;
+}
+
+.angular {
+    background-color: #DC0434;
+}
+
+.flutter {
+    background: linear-gradient(to right,
+            #04ACF4,
+            #05529A);
+}
+
+.language-item p {
+    margin: 0;
+    /* Elimina el margen por defecto de <p> */
 }
 
 @media (min-width: 1300px) {
-    .contenedor-padre {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .contenedor-descripcion {
-        width: 50%;
-    }
-
-    .foto-card {
-        width: 18rem;
-        height: 26rem;
-    }
 
     .titulo-1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
-    .titulo-2 {
-        font-size: 160%;
+
+    .contenedor-descripcion {
+        position: fixed;
+        right: 0;
+        margin-right: 5%;
+        top: 30%;
+        transform: translateY(-50%);
+        padding: 1rem;
+        z-index: 100;
+        width: 30%;
     }
 
-    .descripcion {
-        font-size: 20px;
+    .contenedor-lenguajes {
+        position: fixed;
+        right: 0;
+        margin-right: 5%;
+        top: 70%;
+        transform: translateY(-50%);
+        padding: 1rem;
+        z-index: 100;
+        width: 30%;
     }
-
 }

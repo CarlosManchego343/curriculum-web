@@ -1,49 +1,69 @@
-<div class="p-5 contenedor-padre">
-    <div class="mt-2 contenedor-descripcion p-4">
-        <h1 class="titulo-1">Ingeniero de sistemas</h1>
-        <div class="heading-container mt-3">
-            <h2 class="heading titulo-2">Desarrollador FrontEnd</h2>
-            <h2 class="heading titulo-2">Desarrollador Web/Móvil</h2>
-        </div>
-        <P class="mt-3 descripcion">¡Hola! Soy Carlos, un <b>desarrollador web</b> apasionado por
-            crear soluciones digitales que marquen la diferencia. Cuento con <b>8 meses de experiencia</b>, he trabajado
-            en proyectos que van desde sitios web simples hasta aplicaciones web complejas, siempre buscando combinar
-            creatividad, tecnología y funcionalidad.
+<div class="character-container">
+    <img src="assets/avatar/avatar-carlos.webp" alt="Personaje anime" class="character">
 
-            Me especializo en el <b>desarrollo FrontEnd y en el desarrollo Móvil</b>, disfruto trabajando con
-            tecnologías como <b>Angular, React, Flutter</b>, etc. Mi enfoque es siempre centrado en el usuario,
-            asegurándome de que cada proyecto no solo sea técnicamente sólido, sino también intuitivo y atractivo.
-
-            Cuando no estoy programando, me gusta jugar videojuegos, ver series o peliculas y ver anime. ¡Estoy siempre
-            listo para nuevos desafíos y oportunidades de colaboración!</P>
-
+    <div class="speech-bubble top-bubble">
+        <p>¡Hola! Soy <span itemprop="name">Carlos Manchego</span>, un <strong itemprop="skills">desarrollador
+                web</strong> apasionado por crear soluciones digitales efectivas. Con <strong>8 meses de experiencia
+                profesional</strong>, he trabajado en proyectos desde sitios web básicos hasta aplicaciones
+            complejas usando <span itemprop="knowsAbout">Angular, React y Flutter</span>.</p>
     </div>
-    <div class="card foto-card">
-        <img src="assets/avatar/fotoCarlos.JPG" class="foto m-3" alt="foto Carlos" />
-        <div class="card-body p-0">
-            <h5 class="card-title nombre">Carlos Mario Manchego Pabón</h5>
-            <div class="d-flex justify-content-evenly my3">
-                <button type="button" class="btn botones"
-                    (click)="openExternalUrl('https://github.com/CarlosManchego343')">
-                    <i class="bi bi-github"></i>
-                </button>
-                <button type="button" class="btn botones"
-                    (click)="openExternalUrl('https://www.linkedin.com/in/carlosmariomanchegopabon/')">
-                    <i class="bi bi-linkedin"></i>
-                </button>
-                <button type="button" class="btn botones" (click)="openExternalUrl('https://wa.me/573134895896')">
-                    <i class="bi bi-whatsapp"></i>
-                </button>
-            </div>
-            <p class="correo mt-2">
-                carlosmariomanchego1&#64;gmail.com
+
+    <div class="bubbles-container">
+        <div class="speech-bubble">
+            <p>Mi especialización en <strong>desarrollo FrontEnd y aplicaciones móviles</strong> se complementa con un
+                enfoque centrado en la experiencia de usuario, garantizando interfaces intuitivas y técnicamente
+                robustas.</p>
+        </div>
+        <div class="speech-bubble">
+            <p>Cuando no estoy programando, disfruto de videojuegos, series de anime y explorar nuevas tecnologías.
+                Estoy abierto a oportunidades desafiantes donde pueda aportar mis habilidades en desarrollo web y móvil.
             </p>
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn boton-dcv"
-                    (click)="openExternalUrl('https://drive.google.com/file/d/1V3O16VUfr-WyisdfCWVWgxcQJka26OsN/view?usp=sharing')">
-                    Descargar CV
-                </button>
-            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-2 contenedor-descripcion p-4">
+    <h1 class="titulo-1" itemprop="jobTitle">Ingeniero de Sistemas</h1>
+
+    <div class="heading-container mt-3">
+        <h2 class="heading titulo-2" itemprop="hasOccupation">Desarrollador FrontEnd</h2>
+        <h2 class="heading titulo-2" itemprop="hasOccupation">Desarrollador Web/Móvil</h2>
+    </div>
+
+    <h2 class="titulo-2 m-3" itemprop="hasOccupation">*Información de contacto</h2>
+
+    <div class="d-flex justify-content-evenly mt-3">
+        <a href="https://github.com/CarlosManchego343" class="btn botones" aria-label="GitHub de Carlos"
+            rel="noopener noreferrer" itemprop="sameAs">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/carlosmariomanchegopabon/" class="btn botones"
+            aria-label="LinkedIn de Carlos" rel="noopener noreferrer" itemprop="sameAs">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://wa.me/573134895896" class="btn botones" aria-label="Contactar por WhatsApp"
+            rel="noopener noreferrer" itemprop="sameAs">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <p class="correo mt-2">
+        <a href="mailto:carlosmariomanchego1@gmail.com" itemprop="email">carlosmariomanchego1&#64;gmail.com</a>
+    </p>
+
+    <div class="d-flex justify-content-center">
+        <a href="https://drive.google.com/file/d/1V3O16VUfr-WyisdfCWVWgxcQJka26OsN/view?usp=sharing"
+            class="btn boton-dcv" download="CV-Carlos-Manchego" rel="noopener noreferrer">
+            Descargar CV
+        </a>
+    </div>
+</div>
+
+<div class="mt-2 contenedor-lenguajes p-4">
+    <h1 class="titulo-1">Mis Herramientas</h1>
+    <div class="container">
+        <div *ngFor="let lenguaje of lenguajesConocidos" class="language-item" [class]="lenguaje.toLowerCase()">
+            <p>{{ lenguaje }}</p>
         </div>
     </div>
 </div>

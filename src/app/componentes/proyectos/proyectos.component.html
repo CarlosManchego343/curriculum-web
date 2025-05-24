@@ -26,8 +26,8 @@
       <hr class="my-4 separacion">
       <div class="heading-container mt-3">
         <h2 class="heading titulo-2">Lenguajes usados</h2>
-        <div *ngFor="let proyectoLenguajes of proyecto.lenguajes; let i = index">
-          <img [src]="proyectoLenguajes" [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
+        <div *ngFor="let proyectoLenguajes of proyecto.lenguajes" class="language-item" [class]="proyectoLenguajes.toLowerCase()">
+            <p>{{ proyectoLenguajes }}</p>
         </div>
       </div>
     </div>
