@@ -1,8 +1,7 @@
-<div class="d-block contenedor-principal">
-    <h1 class="titulo-1 m-5">Experiencia laboral</h1>
+<div class="contenedor-principal">
     <section class="m-5">
         <ol class="experienceList">
-            <li class="experienceItemList" *ngFor="let experiencia of experiencias">
+            <li class="experienceItemList mb-4" *ngFor="let experiencia of experiencias">
                 <div class="decorativeCircleList"></div>
                 <p class="datos">{{ experiencia.tiempo }}</p>
                 <h2 class="titulo-2">{{ experiencia.cargo }}</h2>
@@ -13,4 +12,5 @@
             </li>
         </ol>
     </section>
+    <img src="assets/Iconos/currabu.webp" alt="currabu" class="trabajador">
 </div>
