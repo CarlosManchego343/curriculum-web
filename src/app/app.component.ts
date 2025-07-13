@@ -5,11 +5,12 @@ import { NavbarComponent } from './phone_view/navbar/navbar.component';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { mangaPageFlip } from './animations';
+import { BookComponent } from './book_view/book/book.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule],
+  imports: [RouterOutlet, NavbarComponent, CommonModule, BookComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [mangaPageFlip]

@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { PresentacionComponent } from './componentes/presentacion/presentacion.component';
-import { TimelineExpLabComponent } from './componentes/timeline-exp-lab/timeline-exp-lab.component';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { PresentacionComponent } from './general_view/presentacion/presentacion.component';
+import { TimelineExpLabComponent } from './general_view/timeline-exp-lab/timeline-exp-lab.component';
+import { ProyectosComponent } from './general_view/proyectos/proyectos.component';
 
 export const routes: Routes = [
     {

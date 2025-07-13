@@ -1,1 +1,10 @@
-<p>book works!</p>
+<div #book class="book-container"></div>
+
+<div class="hidden-book">
+  <div class="my-page page" data-density="hard" data-page-number="0">
+    <app-front-page></app-front-page>
+  </div>
+  <div class="my-page page" data-page-number="1">
+    <app-index (paginaSeleccionada)="goToPage($event)"></app-index>
+  </div>
+</div>
