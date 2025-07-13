@@ -1,9 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    margin: 0;
-    min-height: 100vh; /* Cubre toda la altura de la pantalla */
-    background-image: url('/assets/Iconos/fondo.webp');
-  }
 
 @font-face {
   font-family: 'parrafos';
@@ -15,12 +10,16 @@ body {
   src: url('/assets/fonts/KARAN___.ttf') format('truetype');
 }
 
-router-outlet ~ * {
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transform-origin: right center; /* Volteo desde el lado derecho */
+@font-face {
+  font-family: 'portada';
+  src: url('/assets/fonts/Comic Boom Bubble_DEMO.otf') format('truetype');
 }
 
-:host {
-  display: block;
+.page {
+  background-image: url('/assets/Iconos/fondo.webp');
+  border: 1px solid black;
+  padding: 20px;
+  font-family: Arial, sans-serif;
   height: 100%;
+  box-sizing: border-box;
 }

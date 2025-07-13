@@ -3,10 +3,11 @@ import { FrontPageComponent } from '../front-page/front-page.component';
 import { PageFlip } from 'page-flip';
 import { isPlatformBrowser } from '@angular/common';
 import { IndexComponent } from '../index/index.component';
+import { PresentationFirstPageComponent } from '../presentation-first-page/presentation-first-page.component';
 
 @Component({
   selector: 'app-book',
-  imports: [FrontPageComponent, IndexComponent],
+  imports: [FrontPageComponent, IndexComponent, PresentationFirstPageComponent],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })

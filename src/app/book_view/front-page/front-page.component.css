@@ -1,0 +1,10 @@
+.titulo {
+    font-family: 'portada', sans-serif;
+    background: linear-gradient(to right, #B71C1C, #C62828, #D32F2F, #E53935, #F44336);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    color: transparent;
+    position: fixed;
+    bottom: 0;
+}
