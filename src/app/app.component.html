@@ -1,6 +1,9 @@
-<div class="manga-book">
-  <app-navbar></app-navbar>
-  <div class="page-container" [@pageFlip]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
+<div class="manga-container">
+  <div *ngIf="isPequeno"><app-navbar></app-navbar>
+    <div class="page" [@pageFlip]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
   </div>
+  <div *ngIf="isMediano">Vista para pantalla MEDIANA</div>
+  <div *ngIf="isGrande">Vista para pantalla GRANDE</div>
 </div>
