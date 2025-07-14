@@ -1,0 +1,47 @@
+<div class="mt-2 contenedor-descripcion p-4">
+    <h1 class="titulo-1" itemprop="jobTitle">Ingeniero de Sistemas</h1>
+
+    <div class="heading-container mt-3">
+        <h2 class="heading titulo-2" itemprop="hasOccupation">Desarrollador FrontEnd</h2>
+        <h2 class="heading titulo-2" itemprop="hasOccupation">Desarrollador Web/Móvil</h2>
+    </div>
+
+    <h2 class="titulo-2 m-3" itemprop="hasOccupation">*Información de contacto</h2>
+
+    <div class="d-flex justify-content-evenly mt-3">
+        <a href="https://github.com/CarlosManchego343" class="btn botones" aria-label="GitHub de Carlos"
+            rel="noopener noreferrer" itemprop="sameAs">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/carlosmariomanchegopabon/" class="btn botones"
+            aria-label="LinkedIn de Carlos" rel="noopener noreferrer" itemprop="sameAs">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://wa.me/573134895896" class="btn botones" aria-label="Contactar por WhatsApp"
+            rel="noopener noreferrer" itemprop="sameAs">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <p class="correo mt-2">
+        <a href="mailto:carlosmariomanchego1@gmail.com" itemprop="email">carlosmariomanchego1&#64;gmail.com</a>
+    </p>
+
+    <div class="d-flex justify-content-center">
+        <a href="https://drive.google.com/file/d/1V3O16VUfr-WyisdfCWVWgxcQJka26OsN/view?usp=sharing"
+            class="btn boton-dcv" download="CV-Carlos-Manchego" rel="noopener noreferrer">
+            Descargar CV
+        </a>
+    </div>
+</div>
+
+<div class="mt-2 contenedor-lenguajes p-4">
+    <h1 class="titulo-1">Mis Herramientas</h1>
+    <div class="container">
+        <div *ngFor="let lenguaje of lenguajesConocidos" class="language-item" [class]="lenguaje.toLowerCase()">
+            <p>{{ lenguaje }}</p>
+        </div>
+    </div>
+</div>
+
+<img src="assets/Iconos/fondo_rosas.webp" alt="Fondo de rosas" class="mt-2 roses-background">

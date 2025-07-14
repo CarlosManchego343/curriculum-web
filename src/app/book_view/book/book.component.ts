@@ -4,10 +4,11 @@ import { PageFlip } from 'page-flip';
 import { isPlatformBrowser } from '@angular/common';
 import { IndexComponent } from '../index/index.component';
 import { PresentationFirstPageComponent } from '../presentation-first-page/presentation-first-page.component';
+import { PresentationSecondPageComponent } from '../presentation-second-page/presentation-second-page.component';
 
 @Component({
   selector: 'app-book',
-  imports: [FrontPageComponent, IndexComponent, PresentationFirstPageComponent],
+  imports: [FrontPageComponent, IndexComponent, PresentationFirstPageComponent, PresentationSecondPageComponent],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })
