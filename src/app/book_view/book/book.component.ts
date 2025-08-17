@@ -7,10 +7,12 @@ import { PresentationFirstPageComponent } from '../presentation-first-page/prese
 import { PresentationSecondPageComponent } from '../presentation-second-page/presentation-second-page.component';
 import { TimelineExpLabFirstPageComponent } from '../timeline-exp-lab-first-page/timeline-exp-lab-first-page.component';
 import { TimelineExpLabSecondPageComponent } from '../timeline-exp-lab-second-page/timeline-exp-lab-second-page.component';
+import { ProyectosFirstPageComponent } from '../proyectos-first-page/proyectos-first-page.component';
+import { ProyectosSecondPageComponent } from '../proyectos-second-page/proyectos-second-page.component';
 
 @Component({
   selector: 'app-book',
-  imports: [FrontPageComponent, IndexComponent, PresentationFirstPageComponent, PresentationSecondPageComponent, TimelineExpLabFirstPageComponent, TimelineExpLabSecondPageComponent],
+  imports: [FrontPageComponent, IndexComponent, PresentationFirstPageComponent, PresentationSecondPageComponent, TimelineExpLabFirstPageComponent, TimelineExpLabSecondPageComponent, ProyectosFirstPageComponent, ProyectosSecondPageComponent],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })
