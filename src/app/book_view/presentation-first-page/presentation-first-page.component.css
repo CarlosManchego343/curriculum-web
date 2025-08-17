@@ -27,6 +27,11 @@ span {
     animation: float 3s ease-in-out infinite;
 }
 
+.chibi {
+    width: 200px;
+    height: 210px;
+}
+
 /* --- GLOBO SUPERIOR --- */
 .top-bubble {
     left: 50px;
@@ -67,45 +72,27 @@ span {
     /* Un poco más grande que el blanco */
     border-style: solid;
     border-color: #000 transparent transparent transparent;
-    /* Negro */
     z-index: 1;
-    /* Detrás del triángulo blanco */
 }
 
-/* --- GLOBOS LATERAL (estilos existentes) --- */
+
 .speech-bubble:not(.top-bubble) {
     position: relative;
     background: white;
     padding: 15px;
-    border-radius: 15px;
     border: 2px solid #000;
-    width: 280px;
+    height: 500px;
+    width: 340px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     animation: float 3s ease-in-out infinite;
     text-align: center;
 }
 
-/* Triángulo lateral (apunta al personaje) */
-.speech-bubble:not(.top-bubble)::before {
-    content: '';
-    position: absolute;
-    left: -16px;
-    bottom: 20px;
-    border-width: 10px 16px 10px 0;
-    border-style: solid;
-    border-color: transparent white transparent transparent;
-    z-index: 1;
+.descripcion {
+    font-family: "parrafos", sans-serif;
+    font-size: 12px;
 }
 
-.speech-bubble:not(.top-bubble)::after {
-    content: '';
-    position: absolute;
-    left: -18px;
-    bottom: 20px;
-    border-width: 10px 16px 10px 0;
-    border-style: solid;
-    border-color: transparent #000 transparent transparent;
-}
 
 @keyframes float {
 
