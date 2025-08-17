@@ -14,18 +14,45 @@ export class PresentationSecondPageComponent {
   }
 
   lenguajesConocidos = [
-    "Java",
-    "PHP",
-    "Python",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Dart",
-    "Spring Boot",
-    "Bootstrap",
-    "React",
-    "React Native",
-    "Angular",
-    "Flutter"
+    {
+      lenguaje: "Java",
+      nivel: "⭐⭐⭐⭐☆"
+    },
+    {
+      lenguaje: "Python",
+      nivel: "⭐⭐☆☆☆"
+    },
+    {
+      lenguaje: "HTML",
+      nivel: "⭐⭐⭐⭐⭐"
+    },
+    {
+      lenguaje: "CSS",
+      nivel: "⭐⭐⭐☆☆"
+    },
+    {
+      lenguaje: "JavaScript",
+      nivel: "⭐⭐⭐⭐☆"
+    },
+    {
+      lenguaje: "Spring Boot",
+      nivel: "⭐⭐⭐☆☆"
+    },
+    {
+      lenguaje: "Bootstrap",
+      nivel: "⭐⭐⭐⭐☆"
+    },
+    {
+      lenguaje: "React",
+      nivel: "⭐⭐⭐☆☆"
+    },
+    {
+      lenguaje: "Angular",
+      nivel: "⭐⭐⭐⭐☆"
+    },
+    {
+      lenguaje: "Flutter",
+      nivel: "⭐⭐⭐☆☆"
+    }
   ]
 }
