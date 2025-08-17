@@ -17,7 +17,7 @@ import { ProyectosSecondPageComponent } from '../proyectos-second-page/proyectos
   styleUrl: './book.component.css'
 })
 export class BookComponent {
-  
+
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
   @ViewChild('book') bookContainer!: ElementRef;
   pageFlip!: any;
@@ -46,6 +46,28 @@ export class BookComponent {
           el.addEventListener('mousedown', (e) => e.stopPropagation());
           el.addEventListener('touchstart', (e) => e.stopPropagation());
         });
+
+      // 🔹 Bloquear propagación dentro del carrusel
+      this.bookContainer.nativeElement.addEventListener(
+        'mousedown',
+        (event: MouseEvent) => {
+          if ((event.target as HTMLElement).closest('.carousel')) {
+            event.stopPropagation();
+          }
+        },
+        true // captura en fase temprana
+      );
+
+      this.bookContainer.nativeElement.addEventListener(
+        'touchstart',
+        (event: TouchEvent) => {
+          if ((event.target as HTMLElement).closest('.carousel')) {
+            event.stopPropagation();
+          }
+        },
+        true
+      );
+
     }
   }
 

@@ -1,1 +1,25 @@
-<p>proyectos-first-page works!</p>
+<h1 class="titulo-1 mb-4">Imagenes de mis entrenamientos</h1>
+<div class="contenedor-abuelo">
+<div *ngFor="let proyecto of imagenes_proyectos; let projectIndex = index" >
+    <div class="p-2 contenedor-padre">
+        <div [id]="getCarouselId(projectIndex)" class="carousel slide item-caruosel">
+            <div class="carousel-inner">
+                <div *ngFor="let proyectoImagen of proyecto.imagenes; let i = index" class="carousel-item"
+                    [class.active]="i === 0">
+                    <img [src]="proyectoImagen" class="d-block w-100 imagen-carusel"
+                        [alt]="'Imagen ' + (i + 1) + ' del proyecto'">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                [attr.data-bs-target]="'#' + getCarouselId(projectIndex)" data-bs-slide="prev" (click)="$event.stopPropagation()">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                [attr.data-bs-target]="'#' + getCarouselId(projectIndex)" data-bs-slide="next" (click)="$event.stopPropagation()">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>

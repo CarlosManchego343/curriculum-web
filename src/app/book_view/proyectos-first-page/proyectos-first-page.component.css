@@ -1,0 +1,16 @@
+/* Contenedor principal que tendrá el scroll */
+.contenedor-abuelo {
+    overflow-y: auto;
+    max-height: 800px;  /* Usa max-height en lugar de height */
+}
+
+/* Contenedor de cada proyecto (sin limitaciones de altura) */
+.contenedor-padre {
+    display: block;
+    margin-bottom: 4px; /* Espacio entre proyectos */
+}
+
+.imagen-carusel {
+    width: 700px;
+    height: 400px; /* Para que no sea mayor que el contenedor */
+}
