@@ -1,0 +1,93 @@
+.titulo-1 {
+    font-family: "titulos", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    color: black;
+    animation: float 3s ease-in-out infinite;
+}
+
+.experienceList {
+    border-inline-start: 5px solid black;
+    position: relative;
+}
+
+.experienceItemList {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    list-style-type: none;
+    background: radial-gradient(circle at center, #F5DEB3 70%, #D2B48C 100%);
+    border: 2px solid black;
+    box-shadow:
+        inset 5px 5px 15px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.decorativeCircleList {
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    border-radius: 50%;
+    position: absolute;
+    left: -45px;
+    margin-top: 6px;
+    box-shadow: 0 0 15px #FFA500;
+}
+
+.decorativeCircleList::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.6) 30%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.datos {
+    font-family: "parrafos", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+}
+
+.lugar {
+    font-family: "titulos", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 15px;
+}
+
+.titulo-2 {
+    font-family: "titulos", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 15px;
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
