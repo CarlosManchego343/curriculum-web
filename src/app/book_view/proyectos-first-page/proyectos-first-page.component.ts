@@ -35,10 +35,10 @@ export class ProyectosFirstPageComponent {
     },
     {
       imagenes: [
-        "assets/proyectoConecta4/tableroVacio.png",
-        "assets/proyectoConecta4/tableroUsado.png",
-        "assets/proyectoConecta4/ganador.png",
-        "assets/proyectoConecta4/confetti.png",
+        "assets/proyectoConecta4/tableroVacio.webp",
+        "assets/proyectoConecta4/tableroUsado.webp",
+        "assets/proyectoConecta4/ganador.webp",
+        "assets/proyectoConecta4/confetti.webp",
       ],
     }
   ]

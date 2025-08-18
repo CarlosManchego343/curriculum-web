@@ -74,8 +74,14 @@ export class BookComponent {
   goToPage(page: number) {
     console.log('Ir a página:', page); // debug
     if (this.pageFlip) {
-      this.pageFlip.getPageCount(); // Total de páginas
-      this.pageFlip.flipController.flipToPage(page);
+      const totalPages = this.pageFlip.getPageCount();
+      console.log('Total de páginas:', totalPages);
+      if (page < totalPages) {
+        this.pageFlip.flip(page);
+      } else {
+        console.warn('Página fuera de rango');
+      }
     }
   }
+
 }
