@@ -1,1 +1,18 @@
-<p>proyectos-second-page works!</p>
+<h1 class="titulo-1 mb-4">Descripcion de mis entrenamientos</h1>
+<div class="contenedor-abuelo">
+    <div *ngFor="let proyecto of proyectosRealizados; let projectIndex = index">
+        <div class="p-4 contenedor-descripcion">
+            <h2 class="titulo-2">{{ proyecto.nombre }}</h2>
+            <p class="descripcion">{{ proyecto.descripcion }}</p>
+            <hr class="m-2 separacion">
+            <div class="heading-container mt-3">
+                <h2 class="heading titulo-2">🎯 Habilidades usadas</h2>
+                <div *ngFor="let proyectoLenguajes of proyecto.lenguajes" class="language-item">
+                    <p>{{ proyectoLenguajes }}</p>
+                </div>
+            </div>
+            <hr class="m-2 separacion">
+            <p class="descripcion">Conclusión: {{ proyecto.conclusion }}</p>
+        </div>
+    </div>
+</div>

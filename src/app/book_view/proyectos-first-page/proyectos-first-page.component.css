@@ -1,16 +1,24 @@
-/* Contenedor principal que tendrá el scroll */
-.contenedor-abuelo {
-    overflow-y: auto;
-    max-height: 800px;  /* Usa max-height en lugar de height */
+.titulo-1 {
+    font-family: "titulos", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
 }
 
-/* Contenedor de cada proyecto (sin limitaciones de altura) */
+.contenedor-abuelo {
+    overflow-y: auto;
+    max-height: 800px;
+}
+
 .contenedor-padre {
     display: block;
-    margin-bottom: 4px; /* Espacio entre proyectos */
+    margin-bottom: 4px;
 }
 
 .imagen-carusel {
     width: 700px;
-    height: 400px; /* Para que no sea mayor que el contenedor */
+    height: 400px;
 }
