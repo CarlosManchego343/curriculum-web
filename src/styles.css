@@ -24,6 +24,15 @@
   box-sizing: border-box;
 }
 
+.portada {
+  background-image: url(/assets/avatar/portada-portafolio.webp) !important;
+  background-size: 90% 90%;   /* ancho 120% y alto 120% del contenedor */
+  background-repeat: no-repeat; /* Evita repeticiones */
+  background-position: center;  /* Centra la imagen */
+  background-color: #6a5aa6; 
+  border: #000 solid 4px;
+}
+
 body {
   background-image: url(/assets/Iconos/fondo-rosas.webp) !important;
 }

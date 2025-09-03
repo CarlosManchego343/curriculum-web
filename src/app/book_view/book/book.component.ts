@@ -1,5 +1,4 @@
 import { Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
-import { FrontPageComponent } from '../front-page/front-page.component';
 import { PageFlip } from 'page-flip';
 import { isPlatformBrowser } from '@angular/common';
 import { IndexComponent } from '../index/index.component';
@@ -12,7 +11,7 @@ import { ProyectosSecondPageComponent } from '../proyectos-second-page/proyectos
 
 @Component({
   selector: 'app-book',
-  imports: [FrontPageComponent, IndexComponent, PresentationFirstPageComponent, PresentationSecondPageComponent, TimelineExpLabFirstPageComponent, TimelineExpLabSecondPageComponent, ProyectosFirstPageComponent, ProyectosSecondPageComponent],
+  imports: [IndexComponent, PresentationFirstPageComponent, PresentationSecondPageComponent, TimelineExpLabFirstPageComponent, TimelineExpLabSecondPageComponent, ProyectosFirstPageComponent, ProyectosSecondPageComponent],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })
