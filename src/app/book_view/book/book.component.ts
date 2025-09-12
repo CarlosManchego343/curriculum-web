@@ -8,7 +8,6 @@ import { TimelineExpLabFirstPageComponent } from '../timeline-exp-lab-first-page
 import { TimelineExpLabSecondPageComponent } from '../timeline-exp-lab-second-page/timeline-exp-lab-second-page.component';
 import { ProyectosFirstPageComponent } from '../proyectos-first-page/proyectos-first-page.component';
 import { ProyectosSecondPageComponent } from '../proyectos-second-page/proyectos-second-page.component';
-import { min } from 'rxjs';
 
 @Component({
   selector: 'app-book',
@@ -28,7 +27,7 @@ export class BookComponent {
         width: 800,
         height: 900,
         size: 'stretch',
-        minWidth: 768,
+        minWidth: 500,
         maxWidth: 800,
         minHeight: 800,
         maxHeight: 900,
