@@ -26,11 +26,11 @@ export class ProyectosFirstPageComponent {
     },
     {
       imagenes: [
-        "assets/proyectoGestorDeInventario/tablaProductos.png",
-        "assets/proyectoGestorDeInventario/panelAgregar.png",
-        "assets/proyectoGestorDeInventario/controlador.png",
-        "assets/proyectoGestorDeInventario/modelo.png",
-        "assets/proyectoGestorDeInventario/repositorio.png",
+        "assets/proyectoGestorDeInventario/tablaProductos.webp",
+        "assets/proyectoGestorDeInventario/panelAgregar.webp",
+        "assets/proyectoGestorDeInventario/controlador.webp",
+        "assets/proyectoGestorDeInventario/modelo.webp",
+        "assets/proyectoGestorDeInventario/repositorio.webp",
       ],
     },
     {
