@@ -18,20 +18,17 @@ import { BookComponent } from './book_view/book/book.component';
 export class AppComponent implements OnInit {
 
   isPequeno = false;
-  isMediano = false;
   isGrande = false;
 
   @ViewChild('outlet') outlet!: RouterOutlet;
 
   constructor(private titleService: Title, private breakpointObserver: BreakpointObserver) {
     this.breakpointObserver.observe([
-      '(max-width: 599px)',       // Pantalla pequeña
-      '(min-width: 600px) and (max-width: 1023px)', // Pantalla mediana
-      '(min-width: 1024px)'       // Pantalla grande
+      '(max-width: 767px)',       // Pantalla pequeña
+      '(min-width: 768px)'       // Pantalla grande
     ]).subscribe((state: BreakpointState) => {
-      this.isPequeno = state.breakpoints['(max-width: 599px)'] ?? false;
-      this.isMediano = state.breakpoints['(min-width: 600px) and (max-width: 1023px)'] ?? false;
-      this.isGrande = state.breakpoints['(min-width: 1024px)'] ?? false;
+      this.isPequeno = state.breakpoints['(max-width: 767px)'] ?? false;
+      this.isGrande = state.breakpoints['(min-width: 768px)'] ?? false;
     });
   }
 
