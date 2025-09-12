@@ -17,8 +17,8 @@ export class ProyectosFirstPageComponent {
   imagenes_proyectos = [
     {
       imagenes: [
-        "assets/proyectoPQRSA/inicioSesion.png",
-        "assets/proyectoPQRSA/menuAdmin.png",
+        "assets/proyectoPQRSA/inicioSesion.webp",
+        "assets/proyectoPQRSA/menuAdmin.webp",
         "assets/proyectoPQRSA/menuUser.png",
         "assets/proyectoPQRSA/registro.png",
         "assets/proyectoPQRSA/reportes.png"
