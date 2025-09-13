@@ -1,7 +1,5 @@
-<div *ngIf="isPequeno"><app-navbar></app-navbar>
-  <div class="page" [@pageFlip]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
-  </div>
+<div *ngIf="isPequeno">
+  <app-navbar></app-navbar>
 </div>
 <div *ngIf="isGrande">
   <app-book></app-book>

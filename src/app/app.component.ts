@@ -4,7 +4,6 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './phone_view/navbar/navbar.component';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-import { mangaPageFlip } from './animations';
 import { BookComponent } from './book_view/book/book.component';
 
 @Component({
@@ -13,7 +12,6 @@ import { BookComponent } from './book_view/book/book.component';
   imports: [RouterOutlet, NavbarComponent, CommonModule, BookComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  animations: [mangaPageFlip]
 })
 export class AppComponent implements OnInit {
 
@@ -35,16 +33,4 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('Portafolio Profesional | Carlos Manchego');
   }
-
-  prepareRoute(outlet: RouterOutlet) {
-    return outlet?.activatedRouteData?.['animation'];
-  }
-
-  @HostListener('@pageFlip.start')
-  onAnimationStart() {
-    const sound = new Audio('/assets/sounds/pageflip.mp3');
-    sound.volume = 0.3;
-    sound.play();
-  }
-
 }
