@@ -1,4 +1,12 @@
 .character {
-    width: 700px;
-    height: 800px;
+    width: 550px;
+    height: 600px;
+}
+
+
+@media (min-width: 1290px) {
+    .character {
+        width: 700px;
+        height: 800px;
+    }
 }

@@ -3,7 +3,7 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 20px;
     color: black;
     animation: float 3s ease-in-out infinite;
 }
@@ -58,7 +58,7 @@
     font-family: "parrafos", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 14px;
+    font-size: 8px;
     color: black;
 }
 
@@ -67,7 +67,7 @@
     font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .titulo-2 {
@@ -75,7 +75,7 @@
     font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -88,5 +88,23 @@
 
     50% {
         transform: translateY(-5px);
+    }
+}
+
+@media (min-width: 1290px) {
+    .titulo-1 {
+        font-size: 2rem;
+    }
+
+    .datos {
+        font-size: 14px;
+    }
+
+    .lugar {
+        font-size: 15px;
+    }
+
+    .titulo-2 {
+        font-size: 15px;
     }
 }
