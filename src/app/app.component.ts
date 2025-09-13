@@ -9,7 +9,7 @@ import { BookComponent } from './book_view/book/book.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule, BookComponent],
+  imports: [NavbarComponent, CommonModule, BookComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -22,11 +22,11 @@ export class AppComponent implements OnInit {
 
   constructor(private titleService: Title, private breakpointObserver: BreakpointObserver) {
     this.breakpointObserver.observe([
-      '(max-width: 767px)',       // Pantalla pequeña
-      '(min-width: 768px)'       // Pantalla grande
+      '(max-width: 1279px)',       // Pantalla pequeña
+      '(min-width: 1280px)'       // Pantalla grande
     ]).subscribe((state: BreakpointState) => {
-      this.isPequeno = state.breakpoints['(max-width: 767px)'] ?? false;
-      this.isGrande = state.breakpoints['(min-width: 768px)'] ?? false;
+      this.isPequeno = state.breakpoints['(max-width: 1279px)'] ?? false;
+      this.isGrande = state.breakpoints['(min-width: 1280px)'] ?? false;
     });
   }
 
