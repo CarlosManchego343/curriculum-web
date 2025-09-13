@@ -19,9 +19,9 @@ export class ProyectosFirstPageComponent {
       imagenes: [
         "assets/proyectoPQRSA/inicioSesion.webp",
         "assets/proyectoPQRSA/menuAdmin.webp",
-        "assets/proyectoPQRSA/menuUser.png",
-        "assets/proyectoPQRSA/registro.png",
-        "assets/proyectoPQRSA/reportes.png"
+        "assets/proyectoPQRSA/menuUser.webp",
+        "assets/proyectoPQRSA/registro.webp",
+        "assets/proyectoPQRSA/reportes.webp"
       ],
     },
     {
